@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AB Weather App</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <h1>Weather 🌤️</h1>
+    <br />
+    <br />
+    <form class="search-form" id="search-form">
+      <div class="row">
+        <div class="col-9">
+        <input class="search" type="search" placeholder="Enter a city..." autofocus="on" autocomplete="off" id="city-input" />
+        </div>
+        <div class="col-3">
+          <input class="submit" type="submit" value="Search">
+        </div>
+        </div>
+     </form>
+    <br />
+    <button class="current-button" id="current-button">Current 📍</button>
+    <br />
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <div class="main-container">
+            <div class="card-body">
+              <div class="city-title" id="city">College Station</div>
+              <ul>
+                <li id="date"></li>
+                <li id = "description"></li>
+              </ul>
+              <div class="currently">Currently:</div>
+            
+                <div class="container">
+                  <div class="row">
+                    <div class="col-8">
+                      <div class="float-left"> 
+                        <span class="temperature" id="temperature"> 88</span>
+                        <span class="units">
+                          <a href="#" id="fahrenheit-link">°F</a>
+                          |
+                          <a href="#" id="celsius-link">°C</a>
+                        </span>
+                      </div>
+  
+                      <div class="weather-icon">☀️</div>
+                  </div>
+                </div>          
+                <br />
+                <div class="container">
+                  <div class="row row-cols-2">
+                    <div class="col"> Feels like: <span id="feels-like"> 95</span>°</div>
+                    <div class="col" id="air-quality">AQI: 11</div>
+                    <div class="col"> Humidity: <span id="humidity">52</span>%</div>
+                    <div class="col">Chance of rain: 50%</div>
+                  </div>
+                  <hr>
+                  <div class="nextdays-title">5-Day Forecast </div><br />
+                  <p class="nextdays-text">
+                    84° | <small>73°</small> <div class="emojis"><span>Thunderstorm</span> ⛈️</div>
+                    <hr>
+                    88° | <small>72°</small> <div class="emojis"><span>Thunderstorm</span> ⛈️</div>
+                    <hr>
+                    86° | <small>73°</small> <div class="emojis"><span>Rain</span> 🌧️</div>
+                    <hr>
+                    84° | <small>72°</small> <div class="emojis"><span>Sunny</span> ☀️</div>
+                    <hr>
+                    84° | <small>72°</small> <div class="emojis"><span>Sunny</span> ☀️</div>
+
+                  </p>
+                </div>
+             </div> 
+        </div>
+      
+      </div>
+    
+    
+      
+  
+
+    <script src="src/index.js"></script>
+</body>
+</html>
