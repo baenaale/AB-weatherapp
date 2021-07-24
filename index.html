@@ -18,9 +18,9 @@
 <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>Weather 🌤️</h1>
-    <br />
   <div class="main-container">
+    <br />
+    <h1>Weather 🌤️</h1>
     <br />
       <div class="row">
         <div class="col-sm">
@@ -55,19 +55,19 @@
                           <a href="#" id="celsius-link">°C</a>
                         </span>
                       </div>
-                   <img src="" id="icon" class="float-right"></div>
-                  </div>
-                </div>          
+                      </div> 
+                   <div class="col-4 weather-icon">
+                     <img src="" id="icon" />
+                  </div>     
                 <br />
                 <div class="container">
                   <div class="row row-cols-2">
-                    <div class="col"> Feels like: <span id="feels-like"></span>°</div>
-                    <div class="col"> Precipitation: <span id="precipitation"> </span></div>
-                    <div class="col"> Humidity: <span id="humidity"></span>%</div>
-                    <div class="col"> Wind:<span id="speed"> </span></div>
+                    <div class="col-8"> Feels like: <span id="feels-like"></span>°</div>
+                    <div class="col-4"> Humidity: <span id="humidity"></span>%</div>
+                    <div class="col"> Wind: <span id="speed"></span> km/h</div>
                   </div>
                   <hr>
-                  <div class="nextdays-title">5-Day Forecast </div><br />
+                  <div class="nextdays-title">5-Day Forecast (TBC) </div><br />
                   <p class="nextdays-text">
                     84° | <small>73°</small> <div class="emojis"><span>Thunderstorm</span> ⛈️</div>
                     <hr>
@@ -80,11 +80,13 @@
                     84° | <small>72°</small> <div class="emojis"><span>Sunny</span> ☀️</div>
                   </p>
                 </div>
-             </div> 
-        </div>
+              </div> 
+            </div>
+          </div>
       </div>
-    </div>
-    
+  </div>
+  </div>
+    <div class="credits"><a href="https://github.com/baenaale/AB-weatherapp">Open-source code</a> by Alejandra Baena</div>
       
   
 

@@ -32,23 +32,23 @@ function formatDate(date) {
     document.querySelector("#humidity").innerHTML = response.data.main.humidity;
     document.querySelector("#description").innerHTML =
       response.data.weather[0].main;
+    document.querySelector("#speed").innerHTML = Math.round(response.data.wind.speed);
     document.querySelector("#icon").setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`); 
     console.log(response.data);
     
     fahrenheitTemp = response.data.main.temp;
   }
-  
+  function search(city) {
+    let apiKey = "4f368074f0c183534aaa3f5cab5a3038";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
+    axios.get(apiUrl).then(displayWeather);
+  }
   function handleSubmit(event) {
     event.preventDefault();
     let city = document.querySelector("#city-input").value;
-    let apiKey = "4f368074f0c183534aaa3f5cab5a3038";
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
-    console.log(apiUrl);
-  
-    axios.get(apiUrl).then(displayWeather);
-    let cityTitle = document.querySelector("#city");
-    cityTitle.innerHTML = `${city}`;
+    search(city);
   }
+  search("College Station");
   function searchLocation(position) {
     let lat = position.coords.latitude;
     let lon = position.coords.longitude;

@@ -19,8 +19,8 @@ h1 {
 }
 .main-container {
   display: block;
-  margin: 0 auto;
-  width: 60%;
+  margin: 60px auto;
+  max-width: 550px;
   border: 20px #08acdd;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   background-color: #fff;
@@ -47,8 +47,7 @@ ul {
   float: left;
 }
 .weather-icon {
-  text-align: right;
-  font-size: 40px;
+  display: block;
 }
 .temperature {
   font-size: 40px;
@@ -85,4 +84,8 @@ ul {
 .current-button:hover {
   color: #fff;
   background-color: #068eb8;
+}
+.credits {
+  margin: 60px auto;
+  text-align: center;
 }
