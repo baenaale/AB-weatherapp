@@ -33,6 +33,8 @@ function formatDate(date) {
     document.querySelector("#description").innerHTML =
       response.data.weather[0].main;
     console.log(response.data);
+    
+    fahrenheitTemp = response.data.main.temp;
   }
   
   function handleSubmit(event) {
@@ -60,18 +62,20 @@ function formatDate(date) {
   
   let searchForm = document.querySelector("#search-form");
   searchForm.addEventListener("submit", handleSubmit);
-  
+ 
+  function convertC(event) {
+    event.preventDefault();
+    let celsiusTemp = (fahrenheitTemp - 32) * 5 / 9;
+    let tempElement = document.querySelector("#temperature"); 
+    tempElement.innerHTML = Math.round(celsiusTemp);
+  }
   function convertF(event) {
     event.preventDefault();
     let tempElement = document.querySelector("#temperature");
-    tempElement.innerHTML = 88;
+    tempElement.innerHTML = Math.round(fahrenheitTemp);
   }
-  function convertC(event) {
-    event.preventDefault();
-    let tempElement = document.querySelector("#temperature");
-    tempElement.innerHTML = 31;
-  }
-  
+   let fahrenheitTemp=null;
+
   let dateElement = document.querySelector("#date");
   let currentTime = new Date();
   dateElement.innerHTML = formatDate(currentTime);
