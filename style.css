@@ -89,3 +89,6 @@ ul {
   margin: 60px auto;
   text-align: center;
 }
+.active {
+  color: black;
+}

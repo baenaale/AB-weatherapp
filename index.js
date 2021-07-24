@@ -66,12 +66,16 @@ function formatDate(date) {
  
   function convertC(event) {
     event.preventDefault();
+    aFahrenheit.classList.remove("active");
+    aCelsius.classList.add("active");
     let celsiusTemp = (fahrenheitTemp - 32) * 5 / 9;
     let tempElement = document.querySelector("#temperature"); 
     tempElement.innerHTML = Math.round(celsiusTemp);
   }
   function convertF(event) {
     event.preventDefault();
+    aCelsius.classList.remove("active");
+    aFahrenheit.classList.add("active");
     let tempElement = document.querySelector("#temperature");
     tempElement.innerHTML = Math.round(fahrenheitTemp);
   }
