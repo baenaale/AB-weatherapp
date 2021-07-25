@@ -13,7 +13,7 @@ h1 {
 }
 
 .search-form {
-  width:80%;
+  width: 90%;
   margin: 0 auto;
   top: 180px;
 }
@@ -58,7 +58,7 @@ ul {
 }
 .units {
   position: relative;
-  top: -20px;
+  top: -25px;
 }
 .search {
   border-radius: 15px;
@@ -95,6 +95,9 @@ ul {
 }
 a {
   color:black;
+}
+a:hover {
+  color: #ec6e4c;
 }
 .active {
   color: #ec6e4c;
