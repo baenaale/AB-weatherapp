@@ -100,3 +100,6 @@ ul {
 .nextdays-min{
   opacity: 0.6;
 }
+.forecast-description {
+  text-transform: capitalize;
+}
