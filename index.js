@@ -34,7 +34,7 @@ function formatDate(date) {
     let forecastHTML = `<div class="row">`;
     forecast.forEach(function (forecastDay, index) {
       if (index < 5) {
-      forecastHTML = forecastHTML + `<div class="col-12"><span class="forecast-days">${formatDay(forecastDay.dt)}   </span><span class="nextdays-max">${Math.round(forecastDay.temp.max)}° </span>| <span class="nextdays-min">${Math.round(forecastDay.temp.min)}°</span> <div class="forecast-icon"><span class="forecast-description">${forecastDay.weather[0].description}</span> <img src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png" width="36"/></div></div><hr>`;}
+      forecastHTML = forecastHTML + `<div class="col-4"><span class="forecast-days">${formatDay(forecastDay.dt)}   </span></div><div class="col text-center"forecast-temps"><span class="nextdays-max">${Math.round(forecastDay.temp.max)}° </span>| <span class="nextdays-min">${Math.round(forecastDay.temp.min)}°</span></div> <div class="col d-flex justify-content-end""forecast-icon"><img src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png" width="45"/></div><hr>`;}
     });
     forecastHTML = forecastHTML + `</div>`;
     forecastElement.innerHTML = forecastHTML;}

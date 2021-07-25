@@ -13,14 +13,14 @@ h1 {
 }
 
 .search-form {
-  width: 70%;
+  width: 75%;
   margin: 0 auto;
   top: 180px;
 }
 .main-container {
   display: block;
   margin: 60px auto;
-  max-width: 550px;
+  max-width: 500px;
   border: 20px #08acdd;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   background-color: #fff;
@@ -90,6 +90,7 @@ ul {
 }
 .forecast-description{
   text-align: right;
+  text-transform: capitalize;
 }
 .forecast-icon {
   float: right;
@@ -100,6 +101,7 @@ ul {
 .nextdays-min{
   opacity: 0.6;
 }
-.forecast-description {
-  text-transform: capitalize;
+.forecast-rows{
+  display: block;
+  margin: 0 auto;
 }

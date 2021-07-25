@@ -23,16 +23,16 @@
     <h1>Weather 🌤️</h1>
     <br />
       <div class="row">
-        <div class="col-sm">
+        <div class="col">
           <form class="search-form" id="search-form">
             <div class="row">
-              <div class="col-auto">
+              <div class="col">
               <input class="search" type="search" placeholder="Enter a city..." autofocus="on" autocomplete="off" id="city-input" />
               </div>
-              <div class="col-auto">
+              <div class="col">
               <input class="submit" type="submit" value="Search">
               </div>
-              <div class="col-auto"><button class="current-button" id="current-button">Current 📍</button></div>
+              <div class="col"><button class="current-button" id="current-button">Current 📍</button></div>
             </div>
             </form>
     <br />
@@ -40,8 +40,8 @@
             <div class="card-body">
               <div class="city-title" id="city"></div>
               <ul>
-                <li id="date"></li>
-                <li id = "description"></li>
+                <li class="current-dt" id="date"></li>
+                <li class="current-description" id ="description"></li>
               </ul>
               <div class="currently">Currently:</div>
                 <div class="container">
@@ -64,19 +64,11 @@
                   <div class="row row-cols-2">
                     <div class="col-8"> Feels like: <span id="feels-like"></span>°</div>
                     <div class="col-4"> Humidity: <span id="humidity"></span>%</div>
-                    <div class="col"> Wind: <span id="speed"></span> km/h</div>
+                    <div class="col"> Wind: <span id="speed"></span> mph</div>
                   </div>
                   <hr>
                   <div class="nextdays-title">5-Day Forecast </div><br />
-                   <div class="forecast" id="forecast"><span class="forecast-days">Sunday </span><span class="nextdays-max">84° </span>| <span class="nextdays-min">73°</span> <div class="forecast-icon"><span class="forecast-description">Thunderstorm</span> <img src="http://openweathermap.org/img/wn/01n@2x.png" width="36"/></div>
-                    <hr>
-                    <span class="forecast-days">Monday </span><span class="nextdays-max">88° </span>| <span class="nextdays-min">72°</span> <div class="forecast-icon"><span class="forecast-description">Thunderstorm</span> ⛈️</div>
-                    <hr>
-                    <span class="forecast-days">Tuesday </span><span class="nextdays-max">86° </span>| <span class="nextdays-min">73°</span> <div class="forecast-icon"><span class="forecast-description">Rain</span> 🌧️</div>
-                    <hr>
-                    <span class="forecast-days">Wednesday </span><span class="nextdays-max">84° </span>| <span class="nextdays-min">72°</span> <div class="forecast-icon"><span class="forecast-description">Sunny</span> ☀️</div>
-                    <hr>
-                    <span class="forecast-days">Thursday </span><span class="nextdays-max">84° </span>| <span class="nextdays-min">72°</span> <div class="forecast-icon"><span class="forecast-description">Sunny</span> ☀️</div></div>
+                   <div class="forecast" id="forecast"></div>
                 </div>
               </div> 
             </div>
