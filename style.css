@@ -29,10 +29,6 @@ h1 {
 .nextdays-title {
   font-size: 20px;
 }
-.emojis {
-  text-align: right;
-  font-size: 30px;
-}
 span {
   font-size: 15px;
 }
@@ -91,4 +87,16 @@ ul {
 }
 .active {
   color: black;
+}
+.forecast-description{
+  text-align: right;
+}
+.forecast-icon {
+  float: right;
+}
+.forecast-days{
+  font-weight: 500;
+}
+.nextdays-min{
+  opacity: 0.6;
 }
