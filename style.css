@@ -13,7 +13,7 @@ h1 {
 }
 
 .search-form {
-  width: 75%;
+  width:80%;
   margin: 0 auto;
   top: 180px;
 }
@@ -25,9 +25,13 @@ h1 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   background-color: #fff;
   border-radius: 30px;
+  border-color: #ec6e4c;
 }
 .nextdays-title {
   font-size: 20px;
+  color: #08acdd;
+  font-weight: 400;
+  font-family: 'Raleway', sans-serif;
 }
 span {
   font-size: 15px;
@@ -38,6 +42,9 @@ ul {
 }
 .city-title {
   font-size: 30px;
+  color: #08acdd;
+  font-weight: 500;
+  font-family: 'Raleway', sans-serif;
 }
 .float-left {
   float: left;
@@ -46,7 +53,8 @@ ul {
   display: block;
 }
 .temperature {
-  font-size: 40px;
+  font-size: 50px;
+  color: black;
 }
 .units {
   position: relative;
@@ -61,7 +69,7 @@ ul {
   color: #fff;
   background-color: #08acdd;
   border-radius: 20px;
-  border-color: #08acdd;
+  border-color: #ec6e4c;
   transition: ease-in-out 200ms;
 }
 .submit:hover {
@@ -74,7 +82,7 @@ ul {
   border-radius: 20px;
   color: #fff;
   background-color: #08acdd;
-  border-color: #068eb8;
+  border-color: #ec6e4c;
   transition: ease-in-out 200ms;
 }
 .current-button:hover {
@@ -85,18 +93,21 @@ ul {
   margin: 60px auto;
   text-align: center;
 }
+a {
+  color:black;
+}
 .active {
-  color: black;
+  color: #ec6e4c;
 }
-.forecast-description{
-  text-align: right;
-  text-transform: capitalize;
-}
+
 .forecast-icon {
   float: right;
 }
 .forecast-days{
   font-weight: 500;
+  color: black;
+  font-family: 'Raleway', sans-serif;
+
 }
 .nextdays-min{
   opacity: 0.6;
@@ -104,4 +115,9 @@ ul {
 .forecast-rows{
   display: block;
   margin: 0 auto;
+}
+.currently {
+  color: #08acdd;
+  font-weight: 400;
+  font-family: 'Raleway', sans-serif;
 }

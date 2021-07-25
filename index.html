@@ -14,6 +14,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500&display=swap" rel="stylesheet">
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <link rel="stylesheet" href="style.css" />
 </head>
@@ -26,13 +29,13 @@
         <div class="col">
           <form class="search-form" id="search-form">
             <div class="row">
-              <div class="col">
+              <div class="col-6">
               <input class="search" type="search" placeholder="Enter a city..." autofocus="on" autocomplete="off" id="city-input" />
               </div>
-              <div class="col">
+              <div class="col-2">
               <input class="submit" type="submit" value="Search">
               </div>
-              <div class="col"><button class="current-button" id="current-button">Current 📍</button></div>
+              <div class="col-4"><button class="current-button" id="current-button">Current 📍</button></div>
             </div>
             </form>
     <br />
@@ -48,7 +51,7 @@
                   <div class="row">
                     <div class="col-8">
                       <div class="float-left"> 
-                        <span class="temperature" id="temperature"> </span>
+                        <span class="temperature" id="temperature"><strong> </strong></span>
                         <span class="units">
                           <a href="#" id="fahrenheit-link" class="active">°F</a>
                           |
