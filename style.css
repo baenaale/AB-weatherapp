@@ -13,14 +13,14 @@ h1 {
 }
 
 .search-form {
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
   top: 180px;
 }
 .main-container {
   display: block;
   margin: 60px auto;
-  max-width: 500px;
+  max-width: 550px;
   border: 20px #08acdd;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   background-color: #fff;
